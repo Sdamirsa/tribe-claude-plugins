@@ -33,7 +33,7 @@ Focus on claims and evidence. Go paragraph by paragraph and check:
 
 **Claim-evidence pairs:** Every scientific claim should point to either your own results or a cited reference. Flag any claim that hangs unsupported.
 
-**Citation accuracy:** Do the cited papers actually support the claims made? (A surprisingly common error: citing a paper for a finding it does not contain.) If the user has the scholarcite skill and a bibliography file, cross-reference citation keys against the bibliography.
+**Citation accuracy:** Do the cited papers actually support the claims made? A surprisingly common error is citing a paper for a finding it does not contain. Cross-reference every [@citekey] against your bibliography file and spot-check at least a handful of citations against the actual source.
 
 **Statistical reporting:** Are p-values, confidence intervals, and effect sizes reported correctly? Are the right statistical tests used for the data type?
 

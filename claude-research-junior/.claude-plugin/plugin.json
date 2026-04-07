@@ -1,7 +1,7 @@
 {
   "name": "claude-research-junior",
-  "version": "1.0.0",
-  "description": "Complete AI-assisted scientific paper writing system — from literature discovery to polished manuscript. Includes CrystaLit (literature crystallization pipeline), strategic paper scoping, skeleton building, figure planning, multi-round polishing, and a reusable expert panel discussion agent. Built for medical AI research teams using Zotero, Pandoc, and VS Code.",
+  "version": "0.1.0-alpha",
+  "description": "Complete AI-assisted scientific paper writing system — from literature discovery to polished manuscript. Bundles CrystaLit (literature crystallization pipeline), strategic paper scoping, skeleton building, figure planning, scientific-writing prose style, multi-round polishing, and a reusable expert panel discussion agent. Uses plain Markdown [@citekey] citations with your own bibliography — no external citation dependency. Built for medical AI research teams using Zotero, Pandoc, and VS Code.",
   "author": {
     "name": "Amir (AI-CVM Bern)"
   },
@@ -11,6 +11,8 @@
     "research",
     "paper-writing",
     "zotero",
+    "pandoc",
+    "markdown-citations",
     "medical-ai",
     "crystalit"
   ],

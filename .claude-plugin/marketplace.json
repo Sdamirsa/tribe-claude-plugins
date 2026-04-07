@@ -1,7 +1,7 @@
 {
   "name": "tribe-claude-plugins",
   "owner": {
-    "name": "Amir (AI-CVM Bern)"
+    "name": "Amir Safavi-Naini"
   },
   "description": "A personal monorepo of Claude plugins for research, scientific writing, and literature workflows. Alpha-stage previews — feedback welcome.",
   "plugins": [

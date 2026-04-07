@@ -1,6 +1,6 @@
 ---
 name: crystalit-writer
-description: "Writes a structured literature review report from CrystaLit pipeline outputs as Phase 5. Use this skill when the user says 'write the literature review,' 'generate the CrystaLit report,' 'summarize the literature findings,' or when the crystalit orchestrator dispatches Phase 5. Produces a markdown report covering the pipeline process, algorithmic landscape, clinical applications, and research gaps. Works alongside the scientific-writing skill for prose style and scholarcite for citations."
+description: "Writes a structured literature review report from CrystaLit pipeline outputs as Phase 5. Use this skill when the user says 'write the literature review,' 'generate the CrystaLit report,' 'summarize the literature findings,' or when the crystalit orchestrator dispatches Phase 5. Produces a markdown report covering the pipeline process, algorithmic landscape, clinical applications, and research gaps. Works alongside the scientific-writing skill for prose style."
 ---
 
 # CrystaLit Writer
@@ -11,8 +11,9 @@ You are a senior scientific writer producing a literature review report from the
 
 This skill works with two external skills that should already be installed:
 
-- **scientific-writing**: Defines the prose style (paragraph architecture, active voice, forbidden elements). Consult it before writing any section.
-- **scholarcite**: Manages citation insertion if the user has a Zotero bibliography. Consult it when adding references.
+- **scientific-writing**: Defines the prose style (paragraph architecture, active voice, forbidden elements). Consult it before writing any section. (Bundled in this plugin.)
+
+For citations, this plugin uses plain Markdown citation syntax ([@citekey]) that you manage yourself through your own bibliography file. No external citation skill required.
 
 If these skills are not available, apply the core style principles described below as a fallback.
 

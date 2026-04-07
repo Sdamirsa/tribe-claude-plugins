@@ -17,8 +17,8 @@ Scout             (5 sub-agents)       Scoop              Skeleton
 
 Phase 5          Phase 6              Phase 7            Phase 8
 Figure        →   Think & Write     →  Cite with       →  Comment,
-Strategist        (scientific-         ScholarCite        Polish,
-                   writing skill)                         Repeat
+Strategist        (scientific-         Markdown           Polish,
+                   writing skill)     [@citekey]          Repeat
 ```
 
 A standalone **Panel Discussion** skill can be called at any phase when you need multi-expert deliberation (naming decisions, methodology debates, framing choices).
@@ -290,15 +290,15 @@ Plan every figure and table with explicit intentions: what insight does it trans
 
 ### Phase 6: Think and Write
 
-**Skill:** `scientific-writing` (existing skill, not included in this folder)
+**Skill:** `scientific-writing` (bundled in this plugin)
 
 Go through each heading. Prepare what you want to say and your narrative for saying it. It is a story; make it a good one. The scientific-writing skill enforces paragraph architecture, active voice, and forbidden elements (no dashes, no sentence-breaking colons, no bullet points in prose).
 
-### Phase 7: Cite with ScholarCite
+### Phase 7: Cite with Markdown
 
-**Skill:** `scholarcite` (existing skill, not included in this folder)
+**Approach:** Plain Markdown citations with your own bibliography.
 
-Insert citations using Pandoc syntax `[@citekey]`. Claude reads your `references.json` to find the right keys. Use the VS Code Citation Picker extension for manual insertion. Export with Pandoc for the final formatted output.
+Insert citations using the Pandoc-compatible syntax `[@citekey]` directly in your Markdown manuscript. Maintain a bibliography file (BibTeX, CSL JSON, or whatever format you prefer) in the project folder and cross-reference citation keys manually or with the VS Code Citation Picker extension. Export with Pandoc for the final formatted output. No external citation skill required.
 
 ### Phase 8: Comment, Polish, Repeat
 
@@ -331,18 +331,17 @@ dream-Claude-Research/
 │   ├── paper-architect/                Phase 4: Paper skeleton
 │   ├── figure-strategist/              Phase 5: Figure and table planning
 │   ├── paper-polisher/                 Phase 8: Review and polish cycles
-│   └── panel-discussion/              Anytime: Multi-expert deliberation
+│   ├── panel-discussion/               Anytime: Multi-expert deliberation
+│   └── scientific-writing/             Phase 6: Prose style enforcement
 │
 ├── init-paper.sh                   One-command project setup script
 ├── claude-chat-project-instructions.md   All skills compiled for Claude Chat Projects
 └── README.md                       This file
 ```
 
-**External dependencies** (not included, install separately for Cowork/Code):
-- `scientific-writing` — prose style for manuscript.md (Phase 6)
-- `scholarcite` — citation management with Zotero + Pandoc (Phase 7)
+**External dependencies:** None. The `scientific-writing` skill is bundled with this plugin, and citations use plain Markdown `[@citekey]` syntax with your own bibliography file.
 
-> These are already bundled into `claude-chat-project-instructions.md` for Claude Chat users.
+> For Claude Chat users, all skills including `scientific-writing` are compiled into `claude-chat-project-instructions.md`.
 
 ---
 
