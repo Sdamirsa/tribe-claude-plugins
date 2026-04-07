@@ -1,0 +1,24 @@
+{
+  "name": "tribe-claude-plugins",
+  "owner": {
+    "name": "Amir (AI-CVM Bern)"
+  },
+  "description": "A personal monorepo of Claude plugins for research, scientific writing, and literature workflows. Alpha-stage previews — feedback welcome.",
+  "plugins": [
+    {
+      "name": "claude-research-junior",
+      "source": "./claude-research-junior",
+      "description": "Complete AI-assisted scientific paper writing system. 12 skills covering literature search (foundation-scout), the CrystaLit literature-crystallization pipeline, scope strategy, paper architecture, figure planning, polishing, and multi-round panel discussions.",
+      "version": "0.1.0-alpha",
+      "keywords": [
+        "scientific-writing",
+        "literature-review",
+        "research",
+        "paper-writing",
+        "zotero",
+        "medical-ai",
+        "crystalit"
+      ]
+    }
+  ]
+}
